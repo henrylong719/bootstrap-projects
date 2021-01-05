@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+    <title>Looplab</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
@@ -19,10 +19,15 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+
+  <!-- #main-nav should be attact to nav (id:main-nav) -->
+  <body data-spy="scroll" data-target="#main-nav" id="home">
     <!-- NAV SECTION -->
     <!-- navbar-expand-sm: indicate when the navbar kicks in -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <nav
+      class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
+      id="main-nav"
+    >
       <div class="container">
         <a href="index.html" class="navbar-brand"> LoopLAB </a>
         <button
@@ -153,7 +158,8 @@
     </header>
 
     <!-- EXPLORE HEAD -->
-    <section id="explre-head-section">
+
+    <section id="explore-head-section">
       <div class="container">
         <div class="row">
           <div class="col text-center py-5">
@@ -211,6 +217,180 @@
       </div>
     </section>
 
+    <!-- CREATE HEAD -->
+    <section id="create-head-section" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <div class="display-4 mb-2">Create</div>
+            <div class="lead mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              nisi magnam, eum enim temporibus vel?
+            </div>
+            <a href="#" class="btn btn-outline-light"> Find Out More </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATE SECTION -->
+    <section id="create-section" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-1">
+            <!-- rounded-circle border attribute -->
+            <img
+              src="img/create-section1.jpg"
+              alt=""
+              class="img-fluid mb-3 rounded-circle"
+            />
+          </div>
+
+          <div class="col-md-6 order-0">
+            <h3>Create your passion</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
+              voluptatum incidunt provident labore ducimus quisquam facilis sit
+              similique vitae quia.
+            </p>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, harum!
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, harum!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHARE HEAD -->
+    <section id="share-head-section" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <div class="display-4 mb-2">Share</div>
+            <div class="lead mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              nisi magnam, eum enim temporibus vel?
+            </div>
+            <a href="#" class="btn btn-outline-light"> Find Out More </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHARE SECTION -->
+    <section id="share-section" class="bg-light text-muted py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- rounded-circle border attribute -->
+            <img
+              src="img/share-section1.jpg"
+              alt=""
+              class="img-fluid mb-3 rounded-circle"
+            />
+          </div>
+
+          <div class="col-md-6">
+            <h3>Share What You Create</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
+              voluptatum incidunt provident labore ducimus quisquam facilis sit
+              similique vitae quia.
+            </p>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, harum!
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, harum!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-4">
+            <h3>LoopLAB</h3>
+            <p>
+              Copyright &copy;
+              <span id="year"></span>
+            </p>
+            <button
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#contactModal"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade text-dark" id="contactModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Us</h5>
+            <button class="close btn btn-secondary" data-dismiss="modal">
+              <!-- <button class="btn btn-sm btn-secondary"></button> -->
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="message">Name</label>
+                <textarea class="form-control"> </textarea>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer d-grid gap-2">
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- <span id="year"></span> -->
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -230,6 +410,32 @@
     <script>
       // Get the current year for the copyright
       $('#year').text(new Date().getFullYear());
+
+      // $('body').scrollspy({ target: '#main-nav' });
+
+      // // Add smooth scrolling
+      // $('#main-nav a').on('click', function (e) {
+      //   // Check for a hash value
+      //   if (this.hash !== '') {
+      //     // Prevent default behavior
+      //     e.preventDefault();
+
+      //     // Store hash
+      //     const hash = this.hash;
+
+      //     // Animate smooth scroll
+      //     $('html, body').animate(
+      //       {
+      //         scrollTop: $(hash).offset().top,
+      //       },
+      //       900,
+      //       function () {
+      //         // Add hash to URL after scroll
+      //         window.location.hash = hash;
+      //       }
+      //     );
+      //   }
+      // });
     </script>
   </body>
 </html>
