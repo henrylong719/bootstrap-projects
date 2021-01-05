@@ -3,7 +3,48 @@ body {
   color: #fff;
 }
 
+/* NAV BAR */
 .navbar {
   border-bottom: #008ed6 3px solid;
   opacity: 0.8;
+}
+
+/*  HOME SECTION  */
+
+#home-section {
+  background-image: url('../img/home.jpg');
+  background-repeat: no-repeat;
+
+  /* cover tells the browser to make sure the image always covers the entire container, 
+  even if it has to stretch the image or cut a little bit off one of the edges. 
+  contain, on the other hand, says to always show the whole image, 
+  even if that leaves a little space to the sides or bottom. */
+  background-size: cover;
+  /* The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed. */
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#home-section .home-inner {
+  padding-top: 150px;
+}
+
+#home-section .card-form {
+  opacity: 0.8;
+}
+
+#home-section .fas {
+  color: #008ed6;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
 }
