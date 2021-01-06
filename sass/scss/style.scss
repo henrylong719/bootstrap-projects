@@ -1,0 +1,94 @@
+/*
+ // npm install sass: 
+ sudo npm i -g sass
+
+// continue to watch sass file 
+sass --watch scss/style.scss css/style.css
+
+
+
+// tutorial liveSassCompile.settings.formats 
+
+ {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+
+*/
+
+@import 'config';
+@import 'utilities';
+@import 'buttons';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: $light-color;
+  font-family: $font-stack;
+  line-height: 1.6;
+}
+
+.showcase {
+  //   background-color: $primary-color;
+  //   color: set-text-color($primary-color);
+
+  // mixin need to be included
+  @include set-background($primary-color);
+  height: 600px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      list-style-type: none;
+      padding: 15px;
+    }
+
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+
+  a {
+    color: set-text-color($primary-color);
+  }
+
+  //   .showcase-content
+  &-content {
+    display: flex;
+    height: 100%;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+  }
+}
+
+@import 'mobile';
